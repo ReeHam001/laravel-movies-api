@@ -26,5 +26,5 @@ Route::get('/actors', '\App\Http\Controllers\ActorsController@index')->name('act
 Route::get('/actors/page/{page?}', '\App\Http\Controllers\ActorsController@index');
 Route::get('/actors/{id}', '\App\Http\Controllers\ActorsController@show')->name('actors.show');
 
-Route::get('/tv', 'TvController@index')->name('tv.index');
-Route::get('/tv/{id}', 'TvController@show')->name('tv.show');
+Route::get('/tv', '\App\Http\Controllers\TvController@index')->name('tv.index');
+Route::get('/tv/{id}', '\App\Http\Controllers\TvController@show')->name('tv.show');
